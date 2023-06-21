@@ -1,16 +1,16 @@
 {
-  "name": "theme-sample",
-  "author": "Vanessa",
-  "url": "https://github.com/siyuan-note/theme-sample",
-  "version": "0.0.3",
-  "minAppVersion": "2.8.8",
+  "name": "sy-dark-purple",
+  "author": "frostime",
+  "url": "https://github.com/frostime/sy-dark-purple",
+  "version": "0.1.0",
+  "minAppVersion": "2.9.0",
   "displayName": {
-    "default": "Theme Sample",
-    "zh_CN": "主题示例"
+    "default": "Dark Purple",
+    "zh_CN": "紫夜"
   },
   "description": {
-    "default": "This is a theme sample",
-    "zh_CN": "这是一个主题示例"
+    "default": "Dark purple theme from jetbrain fleet",
+    "zh_CN": "仿 Jetbrain Fleet 的 Dark purple 主题"
   },
   "readme": {
     "default": "README.md",
@@ -25,6 +25,6 @@
     ]
   },
   "modes": [
-    "light"
+    "dark"
   ]
 }
