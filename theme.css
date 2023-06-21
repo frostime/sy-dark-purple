@@ -172,6 +172,9 @@
     --b3-pdf-background6: var(--b3-theme-primary);
     --b3-pdf-background7: #944194;
     --b3-pdf-dark: #212224;
+
+    --background-highlight: #242433;
+
 }
 
 /* https://github.com/siyuan-note/siyuan/issues/6440 */
@@ -183,8 +186,14 @@
     filter: invert(1)
 }
 
+/* 被选中的块高亮 */
+
+.protyle-wysiwyg--hl, .protyle-wysiwyg--hl .hljs {
+    background-color: var(--background-highlight) !important;
+}
+
 .protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
-    background-color: var(--b3-theme-secondary-lightest) !important;
+    background-color: var(--background-highlight) !important;
 }
 
 /* 代码块 */
