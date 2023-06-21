@@ -155,7 +155,7 @@
     --b3-protyle-inline-link-color: var(--font-keyword);
     --b3-protyle-inline-mark-background: rgb(50, 89, 61);
     --b3-protyle-inline-mark-color: #e8eaed;
-    --b3-protyle-inline-tag-color: #9aa0a6;
+    --b3-protyle-inline-tag-color: var(--font-keyword);
     --b3-protyle-inline-blockref-color: var(--font-keyword);
     --b3-protyle-inline-fileref-color: var(--b3-theme-secondary);
 
@@ -255,6 +255,11 @@ span[data-type*="block-ref"] span[data-type="a"]{
     font-weight: bold;
     font-size: 0.75em;
     bottom: -0.25em;
+}
+
+/* tag */
+span[data-type="tag"]::before, span[data-type="tag"]::after {
+    content: "#";
 }
 
 /* 面包屑 */
