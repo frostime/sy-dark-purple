@@ -27,11 +27,11 @@
     --font-string: #62a362;
 
     /* 字体 */
-    --b3-font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    /* --b3-font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-code: "JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-graph: mononoki;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
-    --b3-font-family-math: KaTeX_Math;
+    --b3-font-family-math: KaTeX_Math; */
 
     /* 左右 dock 和底部 status 栏背景颜色 */
     --b3-toolbar-background: var(--b3-theme-surface);
@@ -182,6 +182,19 @@
     filter: invert(1)
 }
 
+/* 代码块 */
+
+.protyle-wysiwyg div.code-block {
+    padding: 0;
+    margin: 1em 0;
+    line-height: 1.625 !important;
+}
+
+.b3-typography pre>code, .protyle-wysiwyg div.code-block>.hljs {
+    background-color: var(--b3-theme-surface);
+    border-radius: 0px;
+}
+
 #dockLeft, #dockRight, #status {
     background: var(--b3-toolbar-background);
 }
@@ -192,7 +205,7 @@ select.b3-select>option {
 }
 select.b3-select>option:hover {
     /* color: var(--b3-theme-primary-lighter); */
-    background-color: green;
+    /* background-color: green; */
     color: white;
 }
 
@@ -279,12 +292,16 @@ span[data-type="tag"]::before, span[data-type="tag"]::after {
 /* @import url(typography.css);
  */
 .b3-typography blockquote, .b3-typography .bq, .protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
-    background-color: rgba(113, 58, 145, 0.15);
+    background-color: var(--b3-theme-surface);
     border-radius: 0;
     border-left: thick solid var(--b3-theme-primary);
 }
 
 /* Header */
+
+.protyle-title__input {
+    color: var(--font-keyword) !important;
+}
 
 div[data-subtype="h1"] {
     color: var(--font-keyword);
