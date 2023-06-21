@@ -4,13 +4,14 @@
     --b3-theme-primary-light: rgba(113, 58, 145, 0.72);
     --b3-theme-primary-lighter: rgba(113, 58, 145, 0.48);
     --b3-theme-primary-lightest: rgba(113, 58, 145, 0.24);
-    --b3-theme-secondary: #3d599d;
+    --b3-theme-secondary: #5c76b9;
     /**编辑器背景颜色*/
     --b3-theme-background: #1d1d26;
     --b3-theme-background-light: #353637;
-    --b3-theme-surface: #2b2d30;
-    --b3-theme-surface-light: rgba(41, 42, 45, .86);
-    --b3-theme-surface-lighter: rgba(230, 230, 230, .06);
+    /* 毕背景颜色稍微亮一点, 用于toolbar menu等背景颜色 */
+    --b3-theme-surface: #2c2c3b;
+    --b3-theme-surface-light: rgba(44, 44, 59, 0.86);
+    --b3-theme-surface-lighter: rgba(44, 44, 59, .06);
     --b3-theme-error: #e1667e;
 
     /* 文字颜色 */
@@ -28,9 +29,12 @@
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
     --b3-font-family-math: KaTeX_Math;
 
+    /* 左右 dock 和底部 status 栏背景颜色 */
+    --b3-toolbar-background: var(--b3-theme-surface);
+    /* --b3-toolbar-blur-background: var(--b3-theme-surface); */
     /* 顶部工具栏 */
-    --b3-toolbar-background: #2c2c3b;
-    --b3-toolbar-blur-background: #393549;
+    --b3-toolbar-blur-background: var(--b3-theme-surface);
+    /* toolbar 上图标字体颜色 */
     --b3-toolbar-color: #777783;
     --b3-toolbar-hover: #393549;
     --b3-toolbar-left-mac: 69px;
@@ -44,14 +48,15 @@
     --b3-scroll-color: rgba(230, 230, 230, .2);
 
     /* 列表 */
-    --b3-list-hover: #713a91;
+    --b3-list-hover: var(--b3-theme-primary);
     --b3-list-icon-hover: rgba(201, 209, 217, .1);
 
     /* 菜单 */
-    --b3-menu-background: #2c2c3b;
+    --b3-menu-background: var(--b3-theme-surface);
 
     /* 提示 */
-    --b3-tooltips-color: rgba(70, 72, 76, .86);
+    /* --b3-tooltips-color: var(--b3-theme-surface); */
+    --b3-tooltips-color: var(--b3-theme-background);
 
     /* 遮罩 */
     --b3-mask-background: rgba(0, 0, 0, 0.78);
@@ -99,7 +104,7 @@
     --b3-width-transition: width .2s cubic-bezier(0, 0, .2, 1) 0ms;
 
     /* 下拉菜单 */
-    --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(154, 160, 166, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right 2px center var(--b3-theme-background);
+    --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(154, 160, 166, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right 2px center #45405c;
 
     /* 阴影 */
     --b3-point-shadow: 0 3px 6px #010409;
@@ -176,6 +181,16 @@
     background: var(--b3-toolbar-background);
 }
 
+/* 下拉框 */
+select.b3-select>option {
+    background: var(--b3-theme-surface);
+}
+select.b3-select>option:hover {
+    /* color: var(--b3-theme-primary-lighter); */
+    background-color: green;
+    color: white;
+}
+
 
 /* 左右 Docker 面板 */
 div.layout-tab-container {
@@ -201,3 +216,33 @@ div.layout__resize--lr {
 div.layout__resize--lr:hover {
     background: var(--b3-theme-primary);
 }
+
+/* 链接样式 */
+.protyle-wysiwyg [data-node-id] span[data-type="a"] {
+    color: #7a4fca;
+    border-bottom: 0.05em dashed;
+    padding-bottom: 0.05em;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::before {
+    content: "「";
+    position: relative;
+    color: var(--b3-theme-primary);
+    margin-right: 0.1em;
+    font-weight: bold;
+    font-size: 0.75em;
+    top: -0.25em;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::after {
+    content: "」";
+    position: relative;
+    color: var(--b3-theme-primary);
+    margin-left: 0.1em;
+    font-weight: bold;
+    font-size: 0.75em;
+    bottom: -0.25em;
+}
+
+/* @import url(typography.css);
+ */
