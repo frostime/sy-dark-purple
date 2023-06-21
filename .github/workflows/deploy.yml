@@ -13,11 +13,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Run script to package files
+        run: |
+          chmod +x script/make-zip.sh
+          ./script/make-zip.sh
+
       - name: Release
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifactErrorsFailBuild: true
-          artifacts: "package.zip"
+          # artifactErrorsFailBuild: true
+          # artifacts: "package.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
