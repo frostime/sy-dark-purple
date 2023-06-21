@@ -148,12 +148,12 @@
     --b3-protyle-code-linenumber-hl: #26364a;
 
     /* 所见即所得行内元素颜色 */
-    --b3-protyle-inline-strong-color: #e8eaed;
-    --b3-protyle-inline-em-color: #e8eaed;
-    --b3-protyle-inline-s-color: #e8eaed;
+    --b3-protyle-inline-strong-color: var(--font-func);
+    --b3-protyle-inline-em-color: var(--font-func);
+    --b3-protyle-inline-s-color: var(--font-func);
     /* --b3-protyle-inline-link-color: #8ab4f8; */
     --b3-protyle-inline-link-color: var(--font-keyword);
-    --b3-protyle-inline-mark-background: rgb(50, 89, 61);
+    --b3-protyle-inline-mark-background: rgb(199, 162, 70, .9);
     --b3-protyle-inline-mark-color: #e8eaed;
     --b3-protyle-inline-tag-color: var(--font-keyword);
     --b3-protyle-inline-blockref-color: var(--font-keyword);
