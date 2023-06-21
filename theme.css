@@ -196,6 +196,14 @@ select.b3-select>option:hover {
     color: white;
 }
 
+.b3-menu__item--selected {
+    color: var(--b3-theme-secondary);
+}
+
+#layouts .layout__center div[data-type="wnd"]>div:first-child>ul.layout-tab-bar--readonly {
+    background: var(--b3-toolbar-background);
+}
+
 
 /* 左右 Docker 面板 */
 div.layout-tab-container {
@@ -224,7 +232,7 @@ div.layout__resize--lr:hover {
 
 /* 按钮 */
 .b3-button--outline {
-    color: #7a4fca;
+    color: var(--font-func);
 }
 
 /* 链接样式 */
