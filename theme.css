@@ -22,6 +22,10 @@
     --b3-theme-on-surface-light: rgba(154, 160, 166, .68);
     --b3-theme-on-error: #fff;
 
+    --font-keyword: #e09570;
+    --font-func: #c7a246;
+    --font-string: #62a362;
+
     /* 字体 */
     --b3-font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-code: "JetBrainsMono-Regular", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
@@ -147,11 +151,12 @@
     --b3-protyle-inline-strong-color: #e8eaed;
     --b3-protyle-inline-em-color: #e8eaed;
     --b3-protyle-inline-s-color: #e8eaed;
-    --b3-protyle-inline-link-color: #8ab4f8;
+    /* --b3-protyle-inline-link-color: #8ab4f8; */
+    --b3-protyle-inline-link-color: var(--font-keyword);
     --b3-protyle-inline-mark-background: rgb(50, 89, 61);
     --b3-protyle-inline-mark-color: #e8eaed;
     --b3-protyle-inline-tag-color: #9aa0a6;
-    --b3-protyle-inline-blockref-color: #8957e5;
+    --b3-protyle-inline-blockref-color: var(--font-keyword);
     --b3-protyle-inline-fileref-color: var(--b3-theme-secondary);
 
     /* PDF */
@@ -217,9 +222,17 @@ div.layout__resize--lr:hover {
     background: var(--b3-theme-primary);
 }
 
-/* 链接样式 */
-.protyle-wysiwyg [data-node-id] span[data-type="a"] {
+/* 按钮 */
+.b3-button--outline {
     color: #7a4fca;
+}
+
+/* 链接样式 */
+span[data-type*="block-ref"] span[data-type="a"]{
+    color: #c2abec;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type="a"] {
     border-bottom: 0.05em dashed;
     padding-bottom: 0.05em;
 }
@@ -244,5 +257,14 @@ div.layout__resize--lr:hover {
     bottom: -0.25em;
 }
 
+/* 面包屑 */
+.protyle-breadcrumb__item:hover, .protyle-breadcrumb__item--active {
+    background-color: var(--b3-theme-primary-lighter);
+}
+
+
 /* @import url(typography.css);
  */
+.b3-typography blockquote, .b3-typography .bq, .protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
+    background-color: var(--b3-theme-primary-lightest);
+}
