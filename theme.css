@@ -12,9 +12,9 @@
 :root {
     /* 主色 */
     --b3-theme-primary: #713a91;
-    --b3-theme-primary-light: rgba(113, 58, 145, 0.72);
-    --b3-theme-primary-lighter: rgba(113, 58, 145, 0.48);
-    --b3-theme-primary-lightest: rgba(113, 58, 145, 0.24);
+    --b3-theme-primary-light: rgba(113, 58, 145, 0.75);
+    --b3-theme-primary-lighter: rgba(113, 58, 145, 0.50);
+    --b3-theme-primary-lightest: rgba(113, 58, 145, 0.25);
     --b3-theme-secondary: #c7a246;
     --b3-theme-secondary-lightest: #c7a2466f;
     /**编辑器背景颜色*/
@@ -75,7 +75,7 @@
 
     /* 提示 */
     /* --b3-tooltips-color: var(--b3-theme-surface); */
-    --b3-tooltips-color: var(--b3-theme-background);
+    --b3-tooltips-color: var(--b3-theme-primary-light);
 
     /* 遮罩 */
     --b3-mask-background: rgba(0, 0, 0, 0.78);
