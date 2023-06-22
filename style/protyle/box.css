@@ -1,12 +1,13 @@
 /* 代码块 */
 :root {
     --codeblock-linenumber-width: 2.5rem;
+    --background-highlight: var(--b3-theme-surface);
+    --block-margin: 5px 0px;
 }
 
 .protyle-wysiwyg div.code-block {
     padding: 0;
     margin: var(--block-margin);
-    line-height: 1.625 !important;
     background-color: var(--b3-theme-surface-lighter);
 }
 
@@ -62,6 +63,11 @@ div.code-block>.protyle-linenumber {
 .protyle-wysiwyg--hl,
 .protyle-wysiwyg--hl .hljs {
     background-color: var(--background-highlight) !important;
+}
+
+.protyle-wysiwyg--hl .protyle-linenumber__rows,
+.protyle-wysiwyg--select .protyle-linenumber__rows {
+    background-color: var(--b3-theme-background-lightest) !important;
 }
 
 .protyle-wysiwyg--select,

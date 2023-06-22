@@ -19,7 +19,9 @@
     --b3-theme-secondary-lightest: #c7a2466f;
     /**编辑器背景颜色*/
     --b3-theme-background: #1d1d26;
-    --b3-theme-background-light: #353637;
+    --b3-theme-background-light: rgb(29, 29, 38, .75);
+    --b3-theme-background-lighter: rgb(29, 29, 38, .50);
+    --b3-theme-background-lightest: rgb(29, 29, 38, .25);
     /* 毕背景颜色稍微亮一点, 用于toolbar menu等背景颜色 */
     --b3-theme-surface: #2c2c3b;
     --b3-theme-surface-light: rgba(44, 44, 59, 0.86);
@@ -185,10 +187,6 @@
     --b3-pdf-background6: var(--b3-theme-primary);
     --b3-pdf-background7: #944194;
     --b3-pdf-dark: #212224;
-
-    --background-highlight: var(--b3-theme-surface);
-    --block-margin: 5px 0px;
-
 }
 
 
