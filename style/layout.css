@@ -1,0 +1,37 @@
+/* Resize bar, hover 的时候高亮 */
+div.layout__resize:not(layout__resize--lr):hover::after {
+    height: 3px;
+    background: var(--b3-theme-primary);
+}
+
+div.layout__resize--lr {
+    width: 3px;
+    margin: 0 -3px 0 0;
+}
+
+div.layout__resize--lr:hover {
+    background: var(--b3-theme-primary);
+}
+
+
+/* 标签页空白部分的颜色和 toolbar 部分一致 */
+#layouts .layout__center div[data-type="wnd"]>div:first-child>ul.layout-tab-bar--readonly {
+    background: var(--b3-toolbar-background);
+}
+
+
+/* 左右 Docker 面板 */
+div.layout-tab-container {
+    background: var(--b3-theme-background);
+}
+
+#dockLeft,
+#dockRight,
+#status {
+    background: var(--b3-toolbar-background);
+}
+
+/* Dialog 对话框 */
+.b3-dialog__container {
+    background: var(--b3-theme-background);
+}

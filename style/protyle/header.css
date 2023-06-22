@@ -1,0 +1,27 @@
+/* Header */
+
+.protyle-title__input {
+    color: var(--font-keyword) !important;
+}
+
+div[data-subtype="h1"] {
+    color: var(--font-keyword);
+    border-bottom: thick double var(--font-keyword);
+    border-radius: 0 !important;
+}
+
+div[data-subtype="h2"] {
+    border-bottom: medium solid var(--font-func);
+    border-radius: 0 !important;
+}
+
+div[data-subtype="h3"] {
+    border-bottom: thin solid var(--font-func);
+    border-radius: 0 !important;
+}
+
+div[data-subtype="h2"],
+div[data-subtype="h3"],
+div[data-subtype="h4"] {
+    color: var(--font-func);
+}
