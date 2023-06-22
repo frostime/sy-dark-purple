@@ -8,8 +8,9 @@
     --b3-theme-primary-light: rgba(113, 58, 145, 0.72);
     --b3-theme-primary-lighter: rgba(113, 58, 145, 0.48);
     --b3-theme-primary-lightest: rgba(113, 58, 145, 0.24);
-    --b3-theme-secondary: rgb(33, 66, 131);
-    --b3-theme-secondary-lightest: rgba(33, 66, 131, .24);
+    /* --b3-theme-secondary: rgb(33, 66, 131); */
+    --b3-theme-secondary: #c7a246;
+    --b3-theme-secondary-lightest: #c7a2466f;
     /**编辑器背景颜色*/
     --b3-theme-background: #1d1d26;
     --b3-theme-background-light: #353637;
@@ -159,7 +160,8 @@
     --b3-protyle-inline-s-color: var(--font-func);
     /* --b3-protyle-inline-link-color: #8ab4f8; */
     --b3-protyle-inline-link-color: var(--font-keyword);
-    --b3-protyle-inline-mark-background: rgb(199, 162, 70, .9);
+    /* --b3-protyle-inline-mark-background: rgb(199, 162, 70, .9); */
+    --b3-protyle-inline-mark-background: var(--b3-card-success-background);
     --b3-protyle-inline-mark-color: #e8eaed;
     --b3-protyle-inline-tag-color: var(--font-keyword);
     --b3-protyle-inline-blockref-color: var(--font-keyword);
@@ -265,7 +267,7 @@ div.layout__resize--lr:hover {
 
 /* 按钮 */
 .b3-button--outline {
-    color: var(--font-func);
+    color: var(--b3-theme-on-surface);
 }
 
 /* 超级块 */
@@ -287,6 +289,13 @@ div.layout__resize--lr:hover {
 }
 
 /* 链接样式 */
+a {
+    outline: 0;
+    text-decoration: none;
+    color: var(--font-keyword);
+}
+
+
 span[data-type*="block-ref"] span[data-type="a"]{
     color: #c2abec;
 }
