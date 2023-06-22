@@ -8,7 +8,6 @@
     --b3-theme-primary-light: rgba(113, 58, 145, 0.72);
     --b3-theme-primary-lighter: rgba(113, 58, 145, 0.48);
     --b3-theme-primary-lightest: rgba(113, 58, 145, 0.24);
-    /* --b3-theme-secondary: rgb(33, 66, 131); */
     --b3-theme-secondary: #c7a246;
     --b3-theme-secondary-lightest: #c7a2466f;
     /**编辑器背景颜色*/
@@ -180,7 +179,7 @@
     --b3-pdf-background7: #944194;
     --b3-pdf-dark: #212224;
 
-    --background-highlight: #242433;
+    --background-highlight: var(--b3-theme-surface);
     --block-margin: 5px 0px;
 
 }
@@ -194,6 +193,12 @@
     filter: invert(1)
 }
 
+/* 被选中的列表 */
+.b3-menu__item--current, .b3-menu__item--current.b3-menu__item--selected {
+    background-color: var(--b3-list-hover);
+    color: var(--b3-theme-on-primary);
+}
+
 /* 被选中的块高亮 */
 
 .protyle-wysiwyg--hl, .protyle-wysiwyg--hl .hljs {
@@ -202,19 +207,6 @@
 
 .protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
     background-color: var(--background-highlight) !important;
-}
-
-/* 代码块 */
-
-.protyle-wysiwyg div.code-block {
-    padding: 0;
-    margin: var(--block-margin);
-    line-height: 1.625 !important;
-}
-
-.b3-typography pre>code, .protyle-wysiwyg div.code-block>.hljs {
-    background-color: var(--b3-theme-surface);
-    border-radius: 0px;
 }
 
 #dockLeft, #dockRight, #status {
@@ -268,6 +260,28 @@ div.layout__resize--lr:hover {
 /* 按钮 */
 .b3-button--outline {
     color: var(--b3-theme-on-surface);
+}
+
+/* 代码块 */
+
+.protyle-wysiwyg div.code-block {
+    padding: 0;
+    margin: var(--block-margin);
+    line-height: 1.625 !important;
+    background-color: var(--b3-theme-surface-lighter);
+}
+
+.b3-typography pre>code, .protyle-wysiwyg div.code-block>.hljs {
+    background-color: var(--b3-theme-surface-lighter);
+    border-radius: 0px;
+}
+
+/* 引用块 */
+.b3-typography blockquote, .b3-typography .bq, .protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
+    background-color: var(--b3-theme-surface-lighter);
+    border-radius: 0;
+    border-left: thick solid var(--b3-theme-primary);
+    margin: var(--block-margin);
 }
 
 /* 超级块 */
@@ -335,15 +349,6 @@ span[data-type="tag"]::before, span[data-type="tag"]::after {
     background-color: var(--b3-theme-primary-lighter);
 }
 
-
-/* @import url(typography.css);
- */
-.b3-typography blockquote, .b3-typography .bq, .protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
-    background-color: var(--b3-theme-surface);
-    border-radius: 0;
-    border-left: thick solid var(--b3-theme-primary);
-    margin: var(--block-margin);
-}
 
 /* Header */
 
