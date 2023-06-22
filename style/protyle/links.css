@@ -1,7 +1,6 @@
-
 /* 双链 Refs */
 
-span[data-type*="block-ref"] span[data-type="a"]{
+span[data-type*="block-ref"] span[data-type="a"] {
     color: #c2abec;
 }
 
@@ -31,6 +30,7 @@ span[data-type*="block-ref"] span[data-type="a"]{
 }
 
 /* tag */
-span[data-type="tag"]::before, span[data-type="tag"]::after {
+span[data-type="tag"]::before,
+span[data-type="tag"]::after {
     content: "#";
 }

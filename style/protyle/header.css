@@ -20,6 +20,8 @@ div[data-subtype="h3"] {
     border-radius: 0 !important;
 }
 
-div[data-subtype="h2"], div[data-subtype="h3"], div[data-subtype="h4"]{
+div[data-subtype="h2"],
+div[data-subtype="h3"],
+div[data-subtype="h4"] {
     color: var(--font-func);
 }

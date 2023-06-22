@@ -7,13 +7,17 @@
     background-color: var(--b3-theme-surface-lighter);
 }
 
-.b3-typography pre>code, .protyle-wysiwyg div.code-block>.hljs {
+.b3-typography pre>code,
+.protyle-wysiwyg div.code-block>.hljs {
     background-color: var(--b3-theme-surface-lighter);
     border-radius: 0px;
 }
 
 /* 引用块 */
-.b3-typography blockquote, .b3-typography .bq, .protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
+.b3-typography blockquote,
+.b3-typography .bq,
+.protyle-wysiwyg blockquote,
+.protyle-wysiwyg .bq {
     background-color: var(--b3-theme-surface-lighter);
     border-radius: 0;
     border-left: thick solid var(--b3-theme-primary);
@@ -39,10 +43,12 @@
 
 /* 被选中的块高亮 */
 
-.protyle-wysiwyg--hl, .protyle-wysiwyg--hl .hljs {
+.protyle-wysiwyg--hl,
+.protyle-wysiwyg--hl .hljs {
     background-color: var(--background-highlight) !important;
 }
 
-.protyle-wysiwyg--select, .protyle-wysiwyg--select .hljs {
+.protyle-wysiwyg--select,
+.protyle-wysiwyg--select .hljs {
     background-color: var(--background-highlight) !important;
 }

@@ -1,5 +1,6 @@
 /* 被选中的列表 */
-.b3-menu__item--current, .b3-menu__item--current.b3-menu__item--selected {
+.b3-menu__item--current,
+.b3-menu__item--current.b3-menu__item--selected {
     background-color: var(--b3-list-hover);
     color: var(--b3-theme-on-primary);
 }
@@ -8,6 +9,7 @@
 select.b3-select>option {
     background: var(--b3-theme-surface);
 }
+
 select.b3-select>option:hover {
     /* color: var(--b3-theme-primary-lighter); */
     /* background-color: green; */

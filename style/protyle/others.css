@@ -1,4 +1,5 @@
 /* 面包屑 */
-.protyle-breadcrumb__item:hover, .protyle-breadcrumb__item--active {
+.protyle-breadcrumb__item:hover,
+.protyle-breadcrumb__item--active {
     background-color: var(--b3-theme-primary-lighter);
 }
