@@ -1,0 +1,31 @@
+/* 被选中的列表 */
+.b3-menu__item--current, .b3-menu__item--current.b3-menu__item--selected {
+    background-color: var(--b3-list-hover);
+    color: var(--b3-theme-on-primary);
+}
+
+/* 下拉框 */
+select.b3-select>option {
+    background: var(--b3-theme-surface);
+}
+select.b3-select>option:hover {
+    /* color: var(--b3-theme-primary-lighter); */
+    /* background-color: green; */
+    color: white;
+}
+
+.b3-menu__item--selected {
+    color: var(--b3-theme-secondary);
+}
+
+/* 按钮 */
+.b3-button--outline {
+    color: var(--b3-theme-on-surface);
+}
+
+/* 链接样式 */
+a {
+    outline: 0;
+    text-decoration: none;
+    color: var(--font-keyword);
+}
