@@ -2,6 +2,11 @@
  * Copyright (c) 2023 frostime.
 */
 
+@import "style/protyle/header.css";
+@import "style/protyle/container.css";
+@import "style/protyle/links.css";
+@import "style/protyle/others.css";
+
 :root {
     /* 主色 */
     --b3-theme-primary: #713a91;
@@ -184,7 +189,6 @@
 
 }
 
-@import url(style/protyle.css);
 
 /* https://github.com/siyuan-note/siyuan/issues/6440 */
 .protyle-action--order:after {

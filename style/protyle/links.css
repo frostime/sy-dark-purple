@@ -1,0 +1,36 @@
+
+/* 双链 Refs */
+
+span[data-type*="block-ref"] span[data-type="a"]{
+    color: #c2abec;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type="a"] {
+    border-bottom: 0.05em dashed;
+    padding-bottom: 0.05em;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::before {
+    content: "「";
+    position: relative;
+    color: var(--b3-theme-primary);
+    margin-right: 0.1em;
+    font-weight: bold;
+    font-size: 0.75em;
+    top: -0.25em;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::after {
+    content: "」";
+    position: relative;
+    color: var(--b3-theme-primary);
+    margin-left: 0.1em;
+    font-weight: bold;
+    font-size: 0.75em;
+    bottom: -0.25em;
+}
+
+/* tag */
+span[data-type="tag"]::before, span[data-type="tag"]::after {
+    content: "#";
+}
