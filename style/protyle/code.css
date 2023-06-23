@@ -1,14 +1,5 @@
-/* 代码块 */
 :root {
     --codeblock-linenumber-width: 2.5rem;
-    --background-highlight: var(--b3-theme-surface);
-    --block-margin: 5px 0px;
-}
-
-.protyle-wysiwyg div.code-block {
-    padding: 0;
-    margin: var(--block-margin);
-    background-color: var(--b3-theme-surface-lighter);
 }
 
 .b3-typography pre>code,

@@ -1,4 +1,17 @@
 /* 引用块 */
+:root {
+    --background-highlight: var(--b3-theme-surface);
+    --block-margin: 5px 0px;
+}
+
+/* 代码块 */
+.protyle-wysiwyg div.code-block {
+    padding: 0;
+    margin: var(--block-margin);
+    background-color: var(--b3-theme-surface-lighter);
+}
+
+/* 引用块 */
 .b3-typography blockquote,
 .b3-typography .bq,
 .protyle-wysiwyg blockquote,
