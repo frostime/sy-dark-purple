@@ -1,22 +1,18 @@
 :root {
-    --codeblock-linenumber-width: 2.5rem;
+    --codeblock-linenumber-width: 3rem;
 }
 
 .b3-typography pre>code,
 .protyle-wysiwyg div.code-block>.hljs {
     background-color: var(--b3-theme-surface-lighter);
     border-radius: 0px;
+    margin-left: var(--codeblock-linenumber-width);
 }
 
 div.code-block>.protyle-linenumber__rows {
     width: var(--codeblock-linenumber-width);
 }
 
-div.code-block>.protyle-linenumber {
-    margin-left: var(--codeblock-linenumber-width);
-}
-
 .protyle-linenumber__rows>span::before {
-    margin-left: 0.2rem;
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
 }
