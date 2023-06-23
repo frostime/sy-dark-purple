@@ -1,0 +1,27 @@
+:root {
+    --list-indent-line-width: 2px;
+}
+
+.protyle-wysiwyg [data-node-id].li:before {
+    content: "";
+    position: absolute;
+    border-left: var(--list-indent-line-width) solid var(--b3-theme-surface);
+    left: calc(17px - var(--list-indent-line-width) / 2);
+}
+
+.protyle-wysiwyg [data-node-id].li:before {
+    height: calc(100% - 37px);
+    top: 37px;
+}
+
+.protyle-wysiwyg [data-node-id].li:hover::before,
+.protyle-wysiwyg [data-node-id].li.protyle-wysiwyg--hl::before {
+    border-left-color: var(--b3-theme-primary);
+}
+
+/* 高亮选中的列表下属的 li 的左边也要亮起 */
+.protyle-wysiwyg [data-node-id].list.protyle-wysiwyg--hl>div.li::before {
+    border-left-color: var(--b3-theme-primary);
+}
+
+
