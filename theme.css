@@ -190,21 +190,6 @@
     --b3-pdf-dark: #212224;
 }
 
-/* 空块 */
-.protyle-wysiwyg [data-node-id] [spellcheck="false"]:empty {
-    /* padding: 2px; */
-    border-top: 2px dashed var(--b3-theme-surface);
-    border-bottom: 2px dashed var(--b3-theme-surface);
-    border-left: 4px solid var(--b3-theme-surface);
-    border-right: 4px solid var(--b3-theme-surface);
-}
-
-.protyle-wysiwyg [data-node-id] [spellcheck="false"]:empty:after {
-    content: ' ···';
-    opacity: 0.2;
-}
-
-
 
 /* https://github.com/siyuan-note/siyuan/issues/6440 */
 .protyle-action--order:after {
