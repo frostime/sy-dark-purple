@@ -3,3 +3,17 @@
 .protyle-breadcrumb__item--active {
     background-color: var(--b3-theme-primary-lighter);
 }
+
+/* 高亮区域 */
+.b3-typography span[data-type~=mark][data-type~=strong], .protyle-wysiwyg span[data-type~=mark][data-type~=strong] {
+    color: var(--b3-protyle-inline-strong-color) !important;
+}
+
+.b3-typography span[data-type~=mark][data-type~=em], .protyle-wysiwyg span[data-type~=mark][data-type~=em] {
+    color: var(--b3-protyle-inline-em-color) !important;
+}
+
+/* 下划线 */
+.b3-typography u, .b3-typography span[data-type~=u], .protyle-wysiwyg u, .protyle-wysiwyg span[data-type~=u] {
+    border-bottom: 1.5px solid var(--font-func);
+}
