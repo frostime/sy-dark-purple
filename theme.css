@@ -170,8 +170,7 @@
     --b3-protyle-inline-s-color: var(--font-func);
     /* --b3-protyle-inline-link-color: #8ab4f8; */
     --b3-protyle-inline-link-color: var(--font-keyword);
-    /* --b3-protyle-inline-mark-background: rgb(199, 162, 70, .9); */
-    --b3-protyle-inline-mark-background: var(--b3-card-success-background);
+    --b3-protyle-inline-mark-background: rgba(113, 58, 145, 0.7);
     --b3-protyle-inline-mark-color: #e8eaed;
     --b3-protyle-inline-tag-color: var(--font-keyword);
     --b3-protyle-inline-blockref-color: var(--font-keyword);
