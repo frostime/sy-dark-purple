@@ -32,3 +32,10 @@
     opacity: 0.2;
 }
 
+/* 分隔符*/
+/* 分隔符 */
+.protyle-wysiwyg [data-node-id].hr>div::after {
+    background-color: none;
+    border-bottom: 2px dashed var(--b3-theme-on-surface-light);
+}
+
