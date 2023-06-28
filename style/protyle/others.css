@@ -17,3 +17,4 @@
 .b3-typography u, .b3-typography span[data-type~=u], .protyle-wysiwyg u, .protyle-wysiwyg span[data-type~=u] {
     border-bottom: 1.5px solid var(--font-func);
 }
+
