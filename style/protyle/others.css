@@ -39,3 +39,15 @@
     border-bottom: 2px dashed var(--b3-theme-on-surface-light);
 }
 
+
+/* Task list */
+.protyle-task--done>div[data-node-id].p span[data-type="a"],
+.protyle-task--done>div[data-node-id].p span[data-type="block-ref"] {
+    color: #e0957080;
+}
+.protyle-task--done>div[data-node-id].p span[data-type="block-ref"]::before,
+.protyle-task--done>div[data-node-id].p span[data-type="block-ref"]::after {
+    text-decoration: none;
+}
+
+
