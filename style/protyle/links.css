@@ -1,4 +1,7 @@
 /* 双链 Refs */
+:root {
+    --bracket-color: #7b598e;
+}
 
 span[data-type*="block-ref"] span[data-type="a"] {
     color: #c2abec;
@@ -12,7 +15,7 @@ span[data-type*="block-ref"] span[data-type="a"] {
 .protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::before {
     content: "「";
     position: relative;
-    color: var(--b3-theme-primary);
+    color: var(--bracket-color);
     margin-right: 0.1em;
     font-weight: bold;
     font-size: 0.75em;
@@ -22,7 +25,7 @@ span[data-type*="block-ref"] span[data-type="a"] {
 .protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::after {
     content: "」";
     position: relative;
-    color: var(--b3-theme-primary);
+    color: var(--bracket-color);
     margin-left: 0.1em;
     font-weight: bold;
     font-size: 0.75em;
