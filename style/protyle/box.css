@@ -39,6 +39,15 @@
     /* max-width: 100%; */
 }
 
+/* Copy from Tsundoku
+ */
+.protyle-wysiwyg [data-node-id].render-node[data-type='NodeBlockQueryEmbed']>.protyle-wysiwyg__embed {
+    border-top: 2px dashed var(--font-keyword);
+    position: relative;
+    margin: 5px 0px;
+    padding-top: 5px;
+}
+
 /* 被选中的块高亮 */
 
 .protyle-wysiwyg--hl,

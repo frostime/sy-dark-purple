@@ -77,7 +77,8 @@
 
     /* 提示 */
     /* --b3-tooltips-color: var(--b3-theme-surface); */
-    --b3-tooltips-color: var(--b3-theme-primary-light);
+    --b3-tooltips-color: var(--b3-theme-on-primary);
+    --b3-tooltips-background: var(--b3-theme-primary-light);
 
     /* 遮罩 */
     --b3-mask-background: rgba(0, 0, 0, 0.78);
