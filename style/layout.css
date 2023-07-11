@@ -35,3 +35,8 @@ div.layout-tab-container {
 .b3-dialog__container {
     background: var(--b3-theme-background);
 }
+
+/* Block icon 标题栏 */
+.block__icons {
+    background: var(--b3-toolbar-background);
+}
