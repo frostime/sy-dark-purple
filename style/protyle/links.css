@@ -12,7 +12,7 @@ span[data-type*="block-ref"] span[data-type="a"] {
     padding-bottom: 0.05em;
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::before {
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::before {
     content: "「";
     position: relative;
     color: var(--bracket-color);
@@ -22,7 +22,7 @@ span[data-type*="block-ref"] span[data-type="a"] {
     top: -0.25em;
 }
 
-.protyle-wysiwyg [data-node-id] span[data-type*="block-ref"]::after {
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::after {
     content: "」";
     position: relative;
     color: var(--bracket-color);
