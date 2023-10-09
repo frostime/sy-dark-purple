@@ -51,3 +51,14 @@
 }
 
 
+/* 表格 */
+.b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td {
+    background: var(--b3-theme-background-lighter);
+}
+
+.b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td, .protyle-wysiwyg table th {
+    border: 2px solid var(--b3-theme-surface-light);
+    box-sizing: border-box;
+}
+
+
