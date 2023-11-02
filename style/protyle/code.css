@@ -2,12 +2,21 @@
     --codeblock-linenumber-width: 3rem;
 }
 
-.b3-typography pre>code,
-.protyle-wysiwyg div.code-block>.hljs {
-    background-color: var(--b3-theme-surface-lighter);
-    border-radius: 0px;
-    margin-left: var(--codeblock-linenumber-width);
+
+div.code-block[data-node-id][linenumber="true"] .protyle-action__language {
+    margin-left: var(--codeblock-linenumber-width) !important;
 }
+
+
+.b3-typography pre>code,
+.b3-typography div.hljs,
+.protyle-wysiwyg div.code-block>.hljs {
+    background-color: var(--b3-theme-background-lighter);
+    border-radius: 0px;
+    padding: 20px;
+    padding-top: 35px;
+}
+
 
 div.code-block>.protyle-linenumber__rows {
     width: var(--codeblock-linenumber-width);
