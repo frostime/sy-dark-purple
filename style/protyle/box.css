@@ -20,7 +20,7 @@
     border-radius: 0 !important;
     border-left: 6px solid var(--b3-theme-primary) !important;
     margin: var(--block-margin);
-    padding: 0px 7px;
+    padding: 2px 7px;
 }
 
 /* 超级块 */
