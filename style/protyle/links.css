@@ -13,23 +13,25 @@ span[data-type*="block-ref"] span[data-type="a"] {
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::before {
-    content: "「";
-    position: relative;
-    color: var(--bracket-color);
-    margin-right: 0.1em;
-    font-weight: bold;
-    font-size: 0.75em;
-    top: -0.25em;
+    content: "[[#";
+    color: var(--b3-theme-primary);
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0 0.125em;
+    padding: 0;
+    position: inherit;
+    font-size: 1em;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::after {
-    content: "」";
-    position: relative;
-    color: var(--bracket-color);
-    margin-left: 0.1em;
-    font-weight: bold;
-    font-size: 0.75em;
-    bottom: -0.25em;
+    content: "]]";
+    color: var(--b3-theme-primary);
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.125em 0 0;
+    padding: 0;
+    position: inherit;
+    font-size: 1em;
 }
 
 .protyle-wysiwyg [data-node-id] .def--mark {
