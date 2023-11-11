@@ -41,6 +41,7 @@ div.layout-tab-container {
     border-radius: 2px;
     /* outline: solid 1px var(--b3-theme-primary-lighter); */
 }
+
 .backlinkMList>ul>li.b3-list-item {
     background: var(--b3-theme-surface-light);
     margin-top: 5px;
@@ -59,4 +60,71 @@ div.layout-tab-container {
 /* Block icon 标题栏 */
 .block__icons {
     background: var(--b3-toolbar-background);
+}
+
+/* '/'弹出分栏， Copy from savor theme*/
+.hint--menu {
+    animation: menu 0.2s ease-in-out;
+    box-shadow: var(--b3-menu-shadow);
+    background-color: var(--b3-theme-background);
+    padding: 5px;
+    border: none;
+    min-width: 50vw;
+}
+
+.hint--menu>div {
+    columns: 50px 4;
+    column-rule: 1px outset var(--b3-border-color);
+}
+
+.hint--menu .b3-list-item {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.hint--menu .b3-list-item__text {
+    margin: 0 0 0 8px;
+    color: var(--b3-theme-on-background);
+}
+
+.hint--menu .b3-list-item__graphic {
+    margin: 0px;
+    width: 10px;
+    height: 12px;
+    border: 1px solid var(--b3-border-color);
+}
+
+.hint--menu>.b3-list-item--two {
+    margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .hint--menu .b3-list-item--two {
+        width: calc(25% - 5px);
+    }
+
+    .hint--menu {
+        max-height: 412px !important;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hint--menu>div {
+        columns: unset;
+    }
+
+    .hint--menu {
+        columns: unset;
+        min-width: unset !important;
+    }
+}
+
+.protyle-hint.hint--menu:has(>.emojis) {
+    min-width: 372px;
+    width: 372px !important;
+}
+
+.protyle-hint.hint--menu>.emojis {
+    column-span: all;
+    width: 360px !important;
 }

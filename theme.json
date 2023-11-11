@@ -2,8 +2,8 @@
   "name": "sy-dark-purple",
   "author": "frostime",
   "url": "https://github.com/frostime/sy-dark-purple",
-  "version": "0.5.1",
-  "minAppVersion": "2.9.5",
+  "version": "0.5.2",
+  "minAppVersion": "2.10.12",
   "displayName": {
     "default": "Dark Purple",
     "zh_CN": "紫夜"
