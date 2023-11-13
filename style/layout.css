@@ -52,6 +52,39 @@ div.layout-tab-container {
     /* outline: solid 1px var(--b3-theme-primary-lighter); */
 }
 
+
+/* Bookmark */
+
+div.sy__bookmark li.b3-list-item[data-type="NodeDocument"] {
+    color: var(--font-keyword);
+}
+div.sy__bookmark li.b3-list-item[data-type="NodeDocument"]>span.b3-list-item__text {
+    color: var(--font-keyword);
+}
+
+
+div.sy__bookmark li.b3-list-item[data-subtype="h1"] {
+    color: var(--font-keyword);
+}
+div.sy__bookmark li.b3-list-item[data-subtype="h1"]>span.b3-list-item__text {
+    color: var(--font-keyword);
+}
+
+div.sy__bookmark li.b3-list-item[data-subtype="h2"],
+div.sy__bookmark li.b3-list-item[data-subtype="h3"] {
+    color: var(--font-func);
+}
+div.sy__bookmark li.b3-list-item[data-subtype="h2"]>span.b3-list-item__text,
+div.sy__bookmark li.b3-list-item[data-subtype="h3"]>span.b3-list-item__text {
+    color: var(--font-func);
+}
+
+div.sy__bookmark li.b3-list-item[data-subtype="h4"] {
+    color: var(--font-func);
+}
+
+
+
 /* Dialog 对话框 */
 .b3-dialog__container {
     background: var(--b3-theme-background);

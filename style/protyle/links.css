@@ -14,7 +14,7 @@ span[data-type*="block-ref"] span[data-type="a"] {
 
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::before {
     content: "[[#";
-    color: var(--b3-theme-primary);
+    color: var(--custom-ref-link-mark-color);
     display: inline-block;
     text-align: center;
     margin: 0 0 0 0.125em;
@@ -25,7 +25,7 @@ span[data-type*="block-ref"] span[data-type="a"] {
 
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::after {
     content: "]]";
-    color: var(--b3-theme-primary);
+    color: var(--custom-ref-link-mark-color);
     display: inline-block;
     text-align: center;
     margin: 0 0.125em 0 0;
@@ -33,6 +33,16 @@ span[data-type*="block-ref"] span[data-type="a"] {
     position: inherit;
     font-size: 1em;
 }
+
+li.b3-list-item > span.b3-list-item__text > span[data-type~="block-ref"]::before {
+    content: "[[";
+    color: var(--custom-ref-link-mark-color);
+}
+li.b3-list-item > span.b3-list-item__text > span[data-type~="block-ref"]::after {
+    content: "]]";
+    color: var(--custom-ref-link-mark-color);
+}
+
 
 .protyle-wysiwyg [data-node-id] .def--mark {
     background-color: var(--b3-theme-background);
