@@ -11,6 +11,8 @@
 @import "style/protyle/list.css";
 @import "style/protyle/others.css";
 
+@import "style/window.css";
+
 :root {
     /* 主色 */
     --b3-theme-primary: #713a91;

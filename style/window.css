@@ -1,0 +1,12 @@
+.toolbar__window div.toolbar__item--active#pinWindow {
+    color: var(--b3-theme-primary);
+}
+
+.toolbar__window div.toolbar__item--active#pinWindow>svg {
+    transform: rotate(30deg);
+}
+
+body.body--window #layouts ul.layout-tab-bar--readonly {
+    background: var(--b3-toolbar-background);
+}
+
